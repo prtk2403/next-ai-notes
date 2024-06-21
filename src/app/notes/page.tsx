@@ -8,7 +8,7 @@ export const metadata : Metadata={
 }
 export const NotesPage = () =>{
     return (
-        <div>
+        <div className="text-[#e2e1ef] bg-[#0a0a14]">
             Hello
         </div>
     )

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/app/assets/logo.png"
+import logo from "@/app/assets/logo.svg"
 import { UserButton } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
@@ -8,11 +8,11 @@ import { Plus } from "lucide-react";
 
 export const Navbar = () => {
     return (
-        <div className="p-4 shadow">
+        <div className="p-4 shadow bg-[#0a0a14]">
             <div className="flex flex-wrap items-center justify-between">
                 <Link href="/notes" className=" items-center gap-1 flex">
-                    <Image src={logo} alt="NoteGenie" width={50} height={50} />
-                    <span className="font-bold">NoteGenie</span>
+                    <Image src={logo} alt="NoteGenie" width={30} height={30} />
+                    <span className="font-bold text-[#e2e1ef]">NoteGenie</span>
                 </Link>
                 <div className="flex items-center gap-3">
                     <UserButton
@@ -26,7 +26,7 @@ export const Navbar = () => {
                             }
                         }}
                     />
-                    <Button>
+                    <Button className="bg-[#534ebc] hover:bg-[#534ebc]">
                         <Plus size={20} className="mr-2" />
                         Add Note
                     </Button>
